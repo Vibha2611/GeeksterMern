@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        padding: 20px;
+      }
+      input[type="email"],
+      input[type="password"],
+      input[type="text"] {
+        margin: 0 10px 20px 0;
+        padding: 15px;
+        width: 90%;
+        height: 90%;
+        outline: none;
+        color: white;
+      }
+      input[type="email"]:focus {
+        background: bisque;
+      }
+      button {
+        background-color: white;
+        color: black;
+
+        margin: 20px 10px 20px 0;
+        width: 95%;
+        height: 100%;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .container {
+        width: 700px;
+        height: 100%;
+        margin: 50px auto;
+        padding: 15px;
+      }
+
+      #check {
+        padding: 0 0 20px 20px;
+        margin: 10px 0 50px 10px;
+        font-size: 79px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+      }
+      #radio {
+        margin: 10px 0 50px 10px;
+        font-size: 79px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+      }
+
+      span {
+        font-size: 20px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 20px;
+      }
+      body {
+        background-image: url("lockscreen.png");
+        background-size: cover;
+        height: 100vh;
+      }
+      p {
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: brown;
+      }
+      h2 {
+        color: white;
+      }
+      label {
+        color: white;
+      }
+      #dob {
+        margin: 30px 0 10px 10px;
+      }
+
+      p {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Signup Form</h2>
+      <p>Please fill the below details.</p>
+      <form action="Box.html" method="post">
+        <label for="fullName"><b>Name</b></label>
+        <input type="text" name="fullName" placeholder="Enter your full name" />
+
+        <label for="Email"><b>Email</b></label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your mail"
+          required
+        />
+
+        <label for="Password"><b>Password</b></label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your Password"
+          required
+        />
+
+        <label for="RetypePassword"><b>Retype Password</b></label>
+        <input
+          type="password"
+          name="Retype password"
+          placeholder="Please retype your Password"
+          required
+        />
+
+        <p>Select Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+
+        <label for="Date of Birth">Date of Birth:</label>
+        <input type="date" id="dob" name="Date of Birth" />
+        <input type="submit" />
+
+        <button type="Submit">Signup</button>
+        <input
+          type="checkbox"
+          id="check"
+          value="unchecked"
+          name="Remember Me!!"
+        />
+        <span>Remember Me</span>
+      </form>
+    </div>
+  </body>
+</html>
